@@ -1,0 +1,99 @@
+/* Navigation Bar */
+.nav {
+    background:#FFB1B1;
+    padding: 20px;
+    color: #fff;
+    margin: 1%;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.navbar-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background: rgb(105, 122, 139);
+    padding: 12px 17px;
+    border-radius: 15px;
+}
+
+/* About Us Page */
+.main {
+    padding: 40px;
+    background: #f7f7f7;
+    margin-top: 40px;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.main h1 {
+    text-align: center;
+    color: #444;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.main p {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.team-member {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column;
+        align-items: center;
+    }
+}

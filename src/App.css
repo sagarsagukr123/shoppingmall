@@ -1,38 +1,135 @@
-.App {
+/* Main Section */
+main {
+  background: #FF7777; /* Soft light grey */
+  margin: 1%;
+  padding: 20px;
+  color: #333; /* Dark grey for text */
+  border-radius: 20px;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Lighter shadow */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Footer */
+footer {
+  background: #2c3e50; /* Deep navy blue */
+  margin: 1%;
+  padding: 20px;
+  color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Cards */
+.card {
+  background: #DEF9C4; /* Vibrant blue */
+  display: inline-block;
+  margin: 2%;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px; /* Example width, adjust as needed */
+  height: 400px; /* Example height, adjust as needed */
+  border-radius: 15px; /* Match the image's border radius if desired */
+  overflow: hidden; /* Hide any overflow to keep the image within card bounds */
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  color: #fff; /* White text */
+}
+.card:hover {
+  transform: scale(1.05);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Images */
+img {
+  width: 100%;
+  height: 200px; 
+  border-radius: 15px;
+  object-fit: cover;
 }
 
-.App-link {
-  color: #61dafb;
+/* Navigation or Additional Section */
+#na {
+  background: #2c3e50; /* Deep navy blue */
+  padding: 15px;
+  margin: 1%;
+  border-radius: 15px;
+  color: #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Select Dropdown */
+select {
+  text-align: center;
+  padding: 12px;
+  margin: 2% 0 0 2%;
+  border-radius: 15px;
+  border: none;
+  background-color: #f39c12; /* Warm orange */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px;
+  width: 120px;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 15px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add {
+  background: #2ecc71; /* Bright green */
+}
+
+.add:hover {
+  background: #27ae60;
+}
+
+.upd {
+  background: #f39c12; /* Warm orange */
+}
+
+.upd:hover {
+  background: #e67e22;
+}
+
+.rem {
+  background: #e74c3c; /* Red */
+}
+
+.rem:hover {
+  background: #c0392b;
+}
+
+/* Additional Container */
+#con {
+  background: #2c3e50; /* Deep navy blue */
+  margin: 1%;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+input {
+  padding: 12px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
